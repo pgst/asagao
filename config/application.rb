@@ -18,7 +18,7 @@ require "action_view/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Asago
+module Asagao
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
@@ -38,5 +38,7 @@ module Asago
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.time_zone = "Tokyo"
   end
 end
