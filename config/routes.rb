@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   (1..18).each do |n|
     get "lesson/step#{n}(/:name)" => "lesson#step#{n}"
   end
+
+  resources :members do
+    get "search", on: :collection
+  end
 end
