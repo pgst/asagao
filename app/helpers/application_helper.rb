@@ -12,4 +12,8 @@ module ApplicationHelper
       end
     end
   end
+
+  def toggle(member)
+    return member.administrator? ? 'bi bi-toggle-on' : 'bi bi-toggle-off'
+  end
 end

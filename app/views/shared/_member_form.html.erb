@@ -32,13 +32,15 @@
     <th><%= form.label :email %></th>
     <td><%= form.text_field :email %></td>
   </tr>
+  <% if controller.kind_of?(MembersController) %>
   <tr>
     <th><%= Member.human_attribute_name(:administrator) %></th>
     <td>
       <div class="form-check form-switch">
-        <%= form.check_box :administrator, class: 'form-check-input', roll: 'switch' %>
+        <%= form.check_box :administrator, disabled: !current_member.administrator?, class: 'form-check-input', roll: 'switch' %>
         <%= form.label :administrator, class: 'form-check-label' %>
       </div>
     </td>
   </tr>
+  <% end %>
 </table>

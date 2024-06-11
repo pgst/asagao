@@ -3,7 +3,7 @@
 <% if current_member %>
 <ul class="account-menu">
   <%# あとで位置を修正 %>
-  <%= current_member.name + 'さん' %>
+  <%= menu_link_to current_member.name + 'さん', :account %>
   <%= menu_link_to 'ログアウト', :session,
                                  data: { turbo_method: :delete,
                                          turbo_confirm: 'ログアウトしますか？'
