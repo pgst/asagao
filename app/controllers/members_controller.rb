@@ -31,7 +31,7 @@ class MembersController < ApplicationController
     if @member.save
       redirect_to @member, notice: "会員を登録しました。"
     else
-      render "new"
+      render "new", status: :unprocessable_entity
     end
   end
 
@@ -42,7 +42,7 @@ class MembersController < ApplicationController
     if @member.save
       redirect_to @member, notice: "会員情報を更新しました。"
     else
-      render "edit"
+      render "edit", status: :unprocessable_entity
     end
   end
 

@@ -2,7 +2,9 @@
 
 <h1><%= @page_title %></h1>
 
-<div class="toolbar"><%= link_to "会員の詳細に戻る", @member %></div>
+<div class="toolbar">
+  <%= link_to '会員の詳細に戻る', @member, class: 'btn btn-sm btn-info text-white' %>
+</div>
 
 <%= form_for @member do |form| %>
   <%= render "form", form: form %>

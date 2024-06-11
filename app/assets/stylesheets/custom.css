@@ -18,18 +18,32 @@
 body {
   background-color: white;
   color: black;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   font-family: Meiryo, sans-serif;
 }
 
 /* リンク */
-a:link { color: #00c; }
-a:visited { color: #00c; }
-a:hover { color: #f00; }
-a img { border: none; }
+a:link {
+  color: #00c;
+}
+a:visited {
+  color: #00c;
+}
+a:hover {
+  color: #f00;
+}
+a img {
+  border: none;
+}
 
 /* ブロック要素 */
-p, h1, h2, h3, table, ul {
+p,
+h1,
+h2,
+h3,
+table,
+ul {
   margin: 0 0 1em;
 }
 
@@ -94,7 +108,7 @@ footer {
 
 footer nav ul li:not(:last-child):after {
   color: #888;
-  content: " | ";
+  content: ' | ';
   margin: 0 5px;
 }
 
@@ -109,18 +123,24 @@ nav.menubar {
 
 nav.menubar ul li:not(:last-child):after {
   color: #ccc;
-  content: " | ";
+  content: ' | ';
   margin: 0 2px;
 }
 
 /* メニューバーのリンク */
-nav.menubar a { text-decoration: none; }
+nav.menubar a {
+  text-decoration: none;
+}
 
 /* メニューバーのリンク（未訪問） */
-nav.menubar a:link { color: #ccc; }
+nav.menubar a:link {
+  color: #ccc;
+}
 
 /* メニューバーのリンク（訪問済） */
-nav.menubar a:visited { color: #ccc; }
+nav.menubar a:visited {
+  color: #ccc;
+}
 
 /* メニューバーのリンク（マウスを合わせたとき） */
 nav.menubar a:hover {
@@ -165,7 +185,7 @@ div.toolbar {
 
 ul.toolbar li:not(:last-child):after {
   color: #888;
-  content: " | ";
+  content: ' | ';
   margin: 0 2px;
 }
 
@@ -185,8 +205,8 @@ form#login-form label {
   text-align: center;
 }
 
-form#login-form input[type="text"],
-form#login-form input[type="password"] {
+form#login-form input[type='text'],
+form#login-form input[type='password'] {
   width: 120px;
 }
 
@@ -205,4 +225,10 @@ aside#sidebar ul {
 
 aside#sidebar li {
   margin-bottom: 0.3em;
+}
+
+/* バリデーションエラーのスタイルを追加  */
+div.field_with_errors {
+  background-color: #fcc;
+  padding: 2px;
 }
