@@ -26,7 +26,7 @@
           <td><%= member.full_name %></td>
           <td>
             <%= link_to '編集', [:edit, member], class: 'btn btn-sm btn-primary text-white' %>
-            <%= link_to '削除', member, data: {turbo_method: :delete, turbo_confirm: '本当に削除しますか？'},
+            <%= link_to '削除', member, data: { turbo_method: :delete, turbo_confirm: '本当に削除しますか？' },
                                         class: 'btn btn-sm btn-danger text-white' %>
           </td>
         </tr>
