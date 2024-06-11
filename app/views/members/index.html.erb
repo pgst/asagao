@@ -6,7 +6,7 @@
   <%= submit_tag '検索', class: 'btn btn-sm btn-info text-white' %>
 <% end %>
 
-<div class="toolbar"><%= link_to '会員の新規登録', :new_member %></div>
+<div class="toolbar"><%= link_to '会員の新規登録', :new_member, class: 'btn btn-sm btn-info text-white' %></div>
 
 <% if @members.present? %>
   <table class="list">
