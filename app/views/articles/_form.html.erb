@@ -18,15 +18,15 @@
   <tr>
     <th><%= form.label :expired_at, for: 'article_expired_at_1i' %></th>
     <td>
-      <%# <div> %>
-        <%#= form.check_box :no_expiration %>
-        <%#= form.label :no_expiration %>
-      <%# </div> %>
-      <%# <div> %>
+      <div class="form-check form-switch">
+        <%= form.check_box :no_expiration, class: 'form-check-input', roll: 'switch' %>
+        <%= form.label :no_expiration, class: 'form-check-label' %>
+      </div>
+      <div>
         <%= form.datetime_select :expired_at,
           start_year: 2000, end_year: Time.current.year + 1,
           use_month_numbers: true %>
-      <%# </div> %>
+      </div>
     </td>
   </tr>
   <tr>
