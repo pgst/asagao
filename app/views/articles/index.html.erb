@@ -31,7 +31,8 @@
       <% end %>
     </tbody>
   </table>
-  <%#= paginate @articles %>
+  <%# kaminariをBootstrap5で表示 %>
+  <%= paginate @articles, theme: 'bootstrap-5' %>
 <% else %>
   <p>ニュースがありません。</p>
 <% end %>

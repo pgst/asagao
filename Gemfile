@@ -47,6 +47,9 @@ gem "bootsnap", require: false
 # 今回追加
 gem "email_validator", "~> 1.6"
 gem "rails-i18n", "~> 7"
+gem "kaminari"
+gem "kaminari-i18n"
+gem "bootstrap5-kaminari-views"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

@@ -1,4 +1,12 @@
 {
-  "cSpell.words": ["datetime", "strftime", "tbody", "thead"],
+  "cSpell.words": [
+    "datetime",
+    "fnames",
+    "gnames",
+    "kaminari",
+    "strftime",
+    "tbody",
+    "thead"
+  ],
   "cSpell.enableFiletypes": ["erb"]
 }

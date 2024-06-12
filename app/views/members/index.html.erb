@@ -33,6 +33,8 @@
       <% end %>
     </tbody>
   </table>
+  <%# kaminariをBootstrap5で表示 %>
+  <%= paginate @members, theme: 'bootstrap-5' %>
 <% else %>
   <p>会員情報がありません。</p>
 <% end %>
