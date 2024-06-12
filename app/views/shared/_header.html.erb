@@ -1,14 +1,13 @@
 <%= image_tag 'logo.gif', size: '272x48', alt: 'Morning Glory' %>
 
 <% if current_member %>
-<ul class="account-menu">
-  <%# あとで位置を修正 %>
-  <%= menu_link_to current_member.name + 'さん', :account %>
+<ul class="account-menu d-flex justify-content-end">
+  <%= menu_link_to current_member.name + 'さん', :account, class: 'd-inline me-3' %>
   <%= menu_link_to 'ログアウト', :session,
                                  data: { turbo_method: :delete,
                                          turbo_confirm: 'ログアウトしますか？'
                                  },
-                                 class: 'btn btn-sm btn-secondary text-white d-inline ms-3'
+                                 class: 'btn btn-sm btn-secondary text-white d-inline'
   %>
 </ul>
 <% end %>
