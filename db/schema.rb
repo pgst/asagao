@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_11_062152) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_12_012948) do
+  create_table "articles", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "body", null: false
+    t.datetime "released_at", null: false
+    t.datetime "expired_at"
+    t.boolean "member_only", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "members", force: :cascade do |t|
     t.integer "number", null: false
     t.string "name", null: false
