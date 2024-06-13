@@ -10,12 +10,13 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "esbenp.prettier-vscode",
-        "mhutchie.git-graph",
-        "ecmel.vscode-html-css",
-        "Shopify.ruby-extensions-pack",
-        "alexcvzz.vscode-sqlite"
-      ]
+		"esbenp.prettier-vscode",
+		"mhutchie.git-graph",
+		"ecmel.vscode-html-css",
+		"Shopify.ruby-extensions-pack",
+		"alexcvzz.vscode-sqlite",
+		"castwide.solargraph"
+	]
     }
   },
   "containerEnv": {
