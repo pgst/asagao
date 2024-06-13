@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   root "top#index"
   get "about" => "top#about", as: "about"
 
+  get "bad_request" => "top#bad_request"
+  get "forbidden" => "top#forbidden"
+  get "internal_server_error" => "top#internal_server_error"
+
   (1..18).each do |n|
     get "lesson/step#{n}(/:name)" => "lesson#step#{n}"
   end
